@@ -1,0 +1,35 @@
+{
+  "name": "playwright-edge-tests",
+  "version": "1.0.0",
+  "description": "Production-Ready Playwright Test Automation Framework for Yarivo Appointments with Comprehensive Edge-Case Scenarios",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:smoke": "npx playwright test tests/smoke",
+    "test:regression": "npx playwright test tests/regression",
+    "test:edge": "npx playwright test tests/edge",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:mobile": "npx playwright test --project=\"Mobile Chrome\"",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "edge-cases",
+    "javascript",
+    "page-object-model",
+    "e2e"
+  ],
+  "author": "Yarivo QA Engineering Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1"
+  }
+}
